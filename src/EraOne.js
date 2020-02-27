@@ -11,7 +11,7 @@ class EraOne extends Component {
                 <Button onClick={this.props.reset} variant="outlined" color="primary">
                     Reset
                 </Button>
-                <h3>{REACT_APP_EVAR}</h3>
+                <h3>{process.env.REACT_APP_EVAR}</h3>
             </div>
         )
     }
