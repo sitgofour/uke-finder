@@ -11,8 +11,7 @@ class EraOne extends Component {
                 <Button onClick={this.props.reset} variant="outlined" color="primary">
                     Reset
                 </Button>
-                // eslint-disable-next-line no-undef
-                <h3>{TEST_VAR}</h3>
+                <h3>{REACT_APP_EVAR}</h3>
             </div>
         )
     }
