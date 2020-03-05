@@ -7,7 +7,8 @@ const navStyle = {
     backgroundColor: "#7fcd91",
     margin: "15% 0",
     padding: "35 10px",
-    borderRadius: "5px"
+    borderRadius: "5px",
+    boxShadow: "4px 4px 4px 4px #141a15"
 }
 
 class Navbar extends Component {
