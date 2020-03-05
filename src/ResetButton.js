@@ -3,9 +3,12 @@ import Button from "@material-ui/core/Button";
 
 class ResetButton extends Component {
     render() {
+        const buttonStyle = {
+            color: "white"
+        }
         return(
             <div>
-                <Button onClick={this.props.reset} variant="outlined" color="primary">
+                <Button onClick={this.props.reset} variant="outlined" color="primary" style={buttonStyle}>
                     Reset
                 </Button>
             </div>
