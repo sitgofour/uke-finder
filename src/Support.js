@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import Navbar from './NavBar.js';
-// import {navStyle} from './styles.js';
 
-class About extends Component {
+class Support extends Component {
     render() {
         return (
             <div>
                 <Navbar />
-                <div>About</div>
+                <div>Support</div>
             </div>
         )
     }
 }
 
-export default About;
+
+export default Support;

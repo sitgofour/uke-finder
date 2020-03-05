@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 
 const navStyle = {
     display: "flex",
@@ -16,9 +16,15 @@ class Navbar extends Component {
         return (
             <div>
                 <nav style={navStyle}>
-                    <h5>About</h5>
-                    <h1>Uke Identifier</h1>
-                    <h5>Support</h5>
+                    <Link to="/about">
+                        <h5>About</h5>
+                    </Link>
+                    <Link to="/">
+                        <h1>Uke Identifier</h1>
+                    </Link>
+                    <Link to="/support">
+                        <h5>Support</h5>
+                    </Link>
                 </nav>
             </div>
         )

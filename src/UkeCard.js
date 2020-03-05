@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ResetButton from './ResetButton.js';
 
 class UkeCard extends Component {
     render() {
