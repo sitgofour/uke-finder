@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import EraOne from './EraOne.js';
 import EraTwo from './EraTwo.js';
 import EraThree from './EraThree.js';
@@ -7,6 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
 import Button from "@material-ui/core/Button";
 import Navbar from './NavBar.js';
+import ResetButton from './ResetButton.js';
 
 
 const formStyle = {
@@ -17,7 +18,7 @@ const formStyle = {
     width: "300px",
     height: "400px",
     borderRadius: "9px",
-    boxShadow: "6px 9px #4d4646"
+    boxShadow: "8px 8px 8px 8px #141a15"
 }
 
 const inputText = {
@@ -140,8 +141,12 @@ class Home extends Component {
                                 </Button>
                             {/* <input type="submit" value="submit"/> */}
                         </form>
-                        :
-                        this.displayEra()  
+                        : 
+                        <Fragment>
+                            {this.displayEra()}
+                            <ResetButton reset={this.resetForm}/>
+                        </Fragment>
+                        
                     }
                 </div>
                 
